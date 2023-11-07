@@ -1,4 +1,7 @@
-# Corgi
-Corgi is a comprehensive moderation bot that offers a multitude of features and high-quality moderation capabilities.
+---
+layout: landing
+---
 
-- Documentation is available at: https://corgi.loxik.dev/
+# Welcome! 👋
+
+Welcome to the official documentation of Corgi. This documentation aims to provide you with all the necessary information about Corgi.
