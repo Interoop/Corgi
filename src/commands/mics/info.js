@@ -11,19 +11,22 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor(`${mConfig.embedColorInfo}`)
       .setTitle("Corgi's Info")
-      .setURL("https://github.com/NotLoxik/Corgi")
+      .setURL(
+        "https://discord.com/api/oauth2/authorize?client_id=1170021475500179457&permissions=8&scope=applications.commands%20bot"
+      )
       .setDescription(
         "Corgi is a comprehensive moderation bot that offers a multitude of features and high-quality moderation capabilities."
       )
       .addFields(
         {
-          name: "Developer",
+          name: "Developer(s)",
           value: "[Loxik](https://loxik.dev)",
           inline: true,
         },
         {
-          name: "Repository",
-          value: "[GitHub](https://github.com/NotLoxik/Corgi)",
+          name: "Useful Links",
+          value:
+            "[Documentation](https://corgi.loxik.dev)\n[Support Server](https://discord.gg/AwFQK2PQgC)\n[Source Code](https://github.com/NotLoxik/Corgi)",
           inline: true,
         },
         { name: "Language", value: "JavaScript", inline: true }
