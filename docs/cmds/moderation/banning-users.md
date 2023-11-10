@@ -1,2 +1,0 @@
-# ❌ Banning users
-

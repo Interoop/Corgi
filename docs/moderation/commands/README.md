@@ -1,6 +1,10 @@
-# 🔨 Moderation
+---
+description: >-
+  Corgi simplifies moderation by using a single command for various actions such
+  as banning, kicking, muting, and temporary bans.
+---
 
-Corgi simplifies moderation by using a single command for various actions such as banning, kicking, muting, and temporary bans.
+# 🤖 Commands
 
 {% content-ref url="banning-users.md" %}
 [banning-users.md](banning-users.md)

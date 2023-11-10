@@ -1,2 +1,0 @@
-# ❌ Kicking users
-

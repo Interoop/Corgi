@@ -1,2 +1,0 @@
-# ❌ Muting members
-
