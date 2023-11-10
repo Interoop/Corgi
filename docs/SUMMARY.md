@@ -1,7 +1,7 @@
 # Table of contents
 
 * [👋 Welcome](README.md)
-* [🐕 Invite Corgi](https://discord.com/api/oauth2/authorize?client\_id=1170021475500179457\&permissions=8\&scope=applications.commands%20bot)
+  * [🐕 Invite Corgi](https://discord.com/api/oauth2/authorize?client\_id=1170021475500179457\&permissions=8\&scope=applications.commands%20bot)
 
 ## 🔨 Moderation
 
@@ -13,5 +13,5 @@
 
 ## 📑 Legal
 
-* [📖 Privacy Policy](legal/privacy-policy.md)
-* [📖 Terms of Service](legal/terms-of-service.md)
+* [📖 Privacy Policy](legal/privacy.md)
+* [📖 Terms of Service](legal/tos.md)
