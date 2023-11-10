@@ -10,3 +10,8 @@
   * [❌ Kicking users](moderation/commands/kicking-users.md)
   * [❌ Muting members](moderation/commands/muting-members.md)
   * [❌ Banning users](moderation/commands/banning-users.md)
+
+## 📑 Legal
+
+* [📖 Privacy Policy](legal/privacy-policy.md)
+* [📖 Terms of Service](legal/terms-of-service.md)
