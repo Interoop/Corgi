@@ -1,5 +1,5 @@
 ---
-description: 'Last updated and effective: November 10 , 2023'
+description: 'Last updated and effective: November 10, 2023'
 layout:
   title:
     visible: true
