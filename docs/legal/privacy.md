@@ -1,5 +1,5 @@
 ---
-description: 'Last updated and effective: November 10, 2023'
+description: 'Last updated and effective: November 17, 2023'
 layout:
   title:
     visible: true
@@ -19,7 +19,7 @@ layout:
 
 1. Corgi collects data such as Guild Data, User Data, and data that is made by the user.
    * The following data for each category ("Guild Data", "User Data") is listed here:
-   * Corgi collects Guild Data, which includes the Guild Name and Guild ID.
+   * Corgi collects Guild Data, which includes the Guild Name, Guild ID and Channel ID's.
    * Corgi collects User Data, including Username and User ID.
 
 #### Why does Corgi need this data?
