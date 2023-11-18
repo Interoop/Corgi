@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NotLoxik/corgi.git"
+    "url": "git+https://github.com/Interoop/corgi.git"
   },
-  "author": "Loxik",
+  "author": "Interoop",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NotLoxik/corgi/issues"
+    "url": "https://github.com/Interoop/corgi/issues"
   },
-  "homepage": "https://github.com/NotLoxik/corgi#readme",
+  "homepage": "https://corgi.loxik.dev",
   "dependencies": {
     "axios": "^1.6.0",
     "colors": "^1.4.0",
