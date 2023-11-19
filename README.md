@@ -3,4 +3,4 @@ Corgi is a comprehensive moderation bot that offers a multitude of features and 
 
 ### Useful links
 - Documentation: https://corgi.loxik.dev
-- Support server: coming soon
+- Support server: https://discord.gg/AwFQK2PQgC
