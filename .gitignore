@@ -4,5 +4,8 @@ node_modules
 # Packages
 package-lock.json
 
+# Archived files
+archived
+
 # Environment
 .env

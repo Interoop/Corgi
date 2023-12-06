@@ -8,7 +8,7 @@ module.exports = {
   userPermissions: [],
   botPermissions: [],
   run: async (client, interaction) => {
-    const embed = new EmbedBuilder()
+    const rEmbed = new EmbedBuilder()
       .setColor(`${mConfig.embedColorInfo}`)
       .setTitle("Corgi's Info")
       .setURL(
@@ -26,7 +26,7 @@ module.exports = {
         {
           name: "Useful Links",
           value:
-            "[Documentation](https://corgi.loxik.dev)\n[Support Server](https://discord.gg/AwFQK2PQgC)\n[Source Code](https://github.com/NotLoxik/Corgi)",
+            "[Documentation](https://corgi.loxik.dev)\n[Support Server](https://discord.gg/AwFQK2PQgC)\n[Source Code](https://github.com/Interoop/Corgi)",
           inline: true,
         },
         { name: "Language", value: "JavaScript", inline: true }
@@ -35,6 +35,6 @@ module.exports = {
         "https://cdn.discordapp.com/app-icons/1170021475500179457/8012a2d4abd4fb3fa09492676aef6b5e.png?size=256&quot"
       );
 
-    await interaction.reply({ embeds: [embed] });
+    await interaction.reply({ embeds: [rEmbed] });
   },
 };

@@ -3,19 +3,19 @@ require("colors");
 const { EmbedBuilder } = require("discord.js");
 const { developersId, testServerId } = require("../../config.json");
 const mConfig = require("../../messageConfig.json");
-const getLocalCommands = require("../../utils/getLocalCommands");
+const getButtons = require("../../utils/getButtons");
 
 module.exports = async (client, interaction) => {
-  if (!interaction.isChatInputCommand()) return;
-  const localCommands = getLocalCommands();
+  if (!interaction.isButton()) return;
+  const buttons = getButtons();
 
   try {
-    const commandObject = localCommands.find(
-      (cmd) => cmd.data.name === interaction.commandName
+    const buttonObject = buttons.find(
+      (btn) => btn.customId === interaction.customId
     );
-    if (!commandObject) return;
+    if (!buttonObject) return;
 
-    if (commandObject.devOnly) {
+    if (buttonObject.devOnly) {
       if (!developersId.includes(interaction.member.id)) {
         const rEmbed = new EmbedBuilder()
           .setColor(`${mConfig.embedColorError}`)
@@ -25,7 +25,7 @@ module.exports = async (client, interaction) => {
       }
     }
 
-    if (commandObject.testMode) {
+    if (buttonObject.testMode) {
       if (interaction.guild.id !== testServerId) {
         const rEmbed = new EmbedBuilder()
           .setColor(`${mConfig.embedColorError}`)
@@ -35,8 +35,8 @@ module.exports = async (client, interaction) => {
       }
     }
 
-    if (commandObject.userPermissions?.length) {
-      for (const permission of commandObject.userPermissions) {
+    if (buttonObject.userPermissions?.length) {
+      for (const permission of buttonObject.userPermissions) {
         if (interaction.member.permissions.has(permission)) {
           continue;
         }
@@ -48,8 +48,8 @@ module.exports = async (client, interaction) => {
       }
     }
 
-    if (commandObject.botPermissions?.length) {
-      for (const permission of commandObject.botPermissions) {
+    if (buttonObject.botPermissions?.length) {
+      for (const permission of buttonObject.botPermissions) {
         const bot = interaction.guild.members.me;
         if (bot.permissions.has(permission)) {
           continue;
@@ -62,9 +62,19 @@ module.exports = async (client, interaction) => {
       }
     }
 
-    await commandObject.run(client, interaction);
+    if (interaction.message.interactions) {
+      if (interaction.message.interactions.user.id !== interaction.user.id) {
+        const rEmbed = new EmbedBuilder()
+          .setColor(`${mConfig.embedColorError}`)
+          .setDescription(`${mConfig.cannotUseBotton}`);
+        interaction.reply({ embeds: [rEmbed], ephemeral: true });
+        return;
+      }
+    }
+
+    await buttonObject.run(client, interaction);
   } catch (err) {
-    console.log(`An error occurred! ${err}`.red);
+    // console.log(`An error occurred! ${err}`.red);
     console.log(err);
   }
 };

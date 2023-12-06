@@ -3,13 +3,22 @@
     "embedColorWarning": "FEE75C",
     "embedColorError": "ED4245",
     "embedColorInfo": "E67E22",
+    "embedColorNone": "FFFFFF",
   
-    "embedErrorMessage": "An error occurred!",
+    "embedErrorMessage": "`❌` An error occurred!",
   
-    "commandDevOnly": "This command can only be executed by developers.",
-    "commandTestMode": "This is in development and cannot be executed in this server.",
-    "commandPremiumOnly": "This command can only be executed by premium users.",
+    "commandDevOnly": "`❌` This command can only be executed by developers.",
+    "commandTestMode": "`❌` This is in development and cannot be executed in this server.",
+    "commandPremiumOnly": "`❌` This command can only be executed by premium users.",
 
-    "userNoPermissions": "You do not have enough permissions to execute this command.",
-    "botNoPermissions": "I do not have enough permissions to execute this command."
+    "userNoPermissions": "`❌` You do not have enough permissions to execute this command.",
+    "botNoPermissions": "`❌` I do not have enough permissions to execute this command.",
+
+    "hasHigherRolePosition": "`❌` This user has a higher role position than you or has the same role position as you.",
+    "unableToInteractWithYourself": "`❌` You cannot interact with yourself.",
+    "cannotUseBotton": "`❌` You cannot use this button.",
+
+    "wordleWin": "`✅` You won!",
+    "wordleLost": "`❌` You lost! The word was {word}"
+
   }

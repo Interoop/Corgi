@@ -1,9 +1,15 @@
 module.exports = (existing, local) => {
   const changed = (a, b) => JSON.stringify(a) !== JSON.stringify(b);
 
-  if (changed(existing.name, local.data.name) || changed(existing.description || undefined, local.data.description || undefined)) {
+  if (
+    changed(existing.name, local.data.name) ||
+    changed(
+      existing.description || undefined,
+      local.data.description || undefined
+    )
+  ) {
     return true;
-  };
+  }
 
   const optionsChanged = changed(
     optionsArray(existing),
@@ -22,14 +28,14 @@ module.exports = (existing, local) => {
           }
         } else if (obj[key] === undefined) {
           delete obj[key];
-        };
-      };
+        }
+      }
     };
 
     const normalizeObject = (input) => {
       if (Array.isArray(input)) {
         return input.map((item) => normalizeObject(item));
-      };
+      }
 
       const normalizedItem = {
         type: input.type,
@@ -55,9 +61,9 @@ module.exports = (existing, local) => {
           : null,
       };
     });
-  };
+  }
 
   function stringifyChoices(choices) {
     return JSON.stringify(choices.map((c) => c.value));
-  };
+  }
 };
