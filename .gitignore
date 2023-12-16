@@ -9,3 +9,6 @@ archived
 
 # Environment
 .env
+
+# Other
+start.bat
